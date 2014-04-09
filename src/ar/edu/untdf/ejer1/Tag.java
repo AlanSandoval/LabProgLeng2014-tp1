@@ -10,7 +10,8 @@ import java.util.List;
  *
  * @author soporte
  */
-public interface Tag {    
-    public abstract String print();
+public interface Tag {  
+    public abstract String getName();
+    public abstract String render();
     public abstract void addTag(Tag tag);
 }

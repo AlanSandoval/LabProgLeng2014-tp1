@@ -17,7 +17,7 @@ public abstract class ContainerTag implements Tag {
      * @param claszs grupo de clases que que representan a los tags que pueden
      * ser asignados a este tag
      */
-    public ContainerTag(Class[] claszs) {
+    public ContainerTag(Class... claszs) {
         accepted = new ArrayList();
         //si  Tag es asignable desde un objeto de la clase c, significa       
         // que c implementa la interface Tag, que es requicito minimo para ser aceptado
@@ -30,24 +30,28 @@ public abstract class ContainerTag implements Tag {
     }
     private List<Class> accepted;
     private List<Tag> tags;
-
+    
     /**
      * retorna un string con el tag de inicio
      *
      * @return tag de inicio
      */
-    public abstract String printStartTag();
+    public  String printStartTag() {
+        return String.format("<%s>",getName());
+    }
 
-    public abstract String printEndTag();
+    public  String printEndTag(){
+        return String.format("</%s>",getName());
+    }
 
     /*
      * imprime un tag contenedor de la forma: tag de unicio - el listado de tag - tag de cierre
      */
     @Override
-    public String print() {
+    public String render() {
         String code = printStartTag();
         for (Tag tag : tags) {
-            code += " " + tag.print();
+            code += " " + tag.render();
         }
         code += printEndTag();
         return code;

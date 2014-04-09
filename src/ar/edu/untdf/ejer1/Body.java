@@ -4,22 +4,19 @@
  */
 package ar.edu.untdf.ejer1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
- * @author soporte
+ * @author matiasgel
  */
-public  class Header extends ContainerTag{
-
+public class Body extends ContainerTag{
+    public Body(){
+        super(HtmlString.class);
+    }
+    
     @Override
     public String getName() {
-        return "header";
+        return "body";
     }
 
-  
 
-   
-  
 }

@@ -8,14 +8,18 @@ package ar.edu.untdf.ejer1;
  *
  * @author soporte
  */
-public class HtmlUI extends Tag  {
+public class HtmlUI extends ContainerTag  {
 
-     public void HtmlUi(){
-         
+     public  HtmlUI(){
+         super(Header.class,Body.class);
     }
 
     @Override
-    public String print() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getName() {
+        return "html";
     }
+
+   
+
+
 }
