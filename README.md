@@ -16,3 +16,21 @@ UML
 
 ![alt text](https://raw.githubusercontent.com/matiasgel/LabProgLeng2014-tp1/master/uml.png "")
 
+Diccionario de clases
+_____________________
+
+Tag: Interface abstracción genérica de un tag html. <br>
+ContainerTag: Tag que puede contener otros tags, ejmp: body. <br>
+SimpleTag: Tag que no contiene otros tags. Ejmp Button.<br>
+HtmlUI: Abstracción del tag html para ui puras html.<br>
+JqueryUI: Abstracción del tag html para ui Jquery.<br>
+HtmlHeader: Abstracción del tag header para ui html puras.<br>
+JqueryHeader: Abstracción del tag header para ui jquery.<br>
+HtmlBody: Abstracción del tag body para ui html puras.<br>
+JqueryBody: Abstracción del tag body para ui jquery puras.<br>
+Title: Abstracción del tag title.<br>
+HtmlString: Abstracción de un string html.<br>
+HtmlButton:  Abstracción del tag button. Para interfaces html.<br>
+JqueryButton: Abstracción del tag button para interfaces jquery.<br>
+
+
