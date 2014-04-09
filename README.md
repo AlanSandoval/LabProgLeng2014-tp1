@@ -14,4 +14,5 @@ Implemente el soporte de atributos utilizando el patrón que considere apropiado
 UML
 ---
 
-![uml]https://raw.githubusercontent.com/matiasgel/LabProgLeng2014-tp1/master/uml.png
+![alt text](https://raw.githubusercontent.com/matiasgel/LabProgLeng2014-tp1/master/uml.png "")
+
