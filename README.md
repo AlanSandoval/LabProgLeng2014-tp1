@@ -10,3 +10,8 @@ En el marco de un proyecto de prototipado rápido de paginas web se requiere el 
 3) Para una segunda iteración en el desarrollo de la librería se requiere agregar la posibilidad de incluir atributos en la definición de los tags html. Un atributo actuá como decorador de un tag y se encuentra en el tag de inicio, por ejemplo el tag button acepta los atributos disabled, autofocus y type de la forma:<br>
 ```  <button disabled autofocus type=”button”>boton1</button>```<br>
 Implemente el soporte de atributos utilizando el patrón que considere apropiado. Realice la implementación utilizando el ejemplo del boton con los 3 atributos descriptos, el diseño debe ser lo suficientemente flexible para extender a otros tags y atributos.
+
+UML
+---
+
+![uml]https://raw.githubusercontent.com/matiasgel/LabProgLeng2014-tp1/master/uml.png
