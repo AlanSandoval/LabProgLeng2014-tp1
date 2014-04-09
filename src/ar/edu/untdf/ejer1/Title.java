@@ -8,14 +8,12 @@ package ar.edu.untdf.ejer1;
  *
  * @author soporte
  */
-public class JqueryUI extends ContainerTag{
-    public JqueryUI(){
-        super(JqueryHeader.class,JqueryBody.class);
+public class Title extends ContainerTag{
+    public Title(){
+     super(HtmlString.class);
     }
-
     @Override
-    public String getName() {
-        return "html";
+    public String getName(){
+        return "Title";
     }
-    
 }

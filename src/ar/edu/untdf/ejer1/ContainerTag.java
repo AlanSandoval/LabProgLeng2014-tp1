@@ -9,7 +9,7 @@ import java.util.List;
  * @author matias
  */
 public abstract class ContainerTag implements Tag {
-
+    String init="";
     /**
      * Este constructor recibe como parametro un grupo de clases que representan
      * tags e inicializa el listado de tags que acepta este tag.
@@ -19,6 +19,7 @@ public abstract class ContainerTag implements Tag {
      */
     public ContainerTag(Class... claszs) {
         accepted = new ArrayList();
+        tags = new ArrayList();
         //si  Tag es asignable desde un objeto de la clase c, significa       
         // que c implementa la interface Tag, que es requicito minimo para ser aceptado
         for (Class c : claszs) {
@@ -50,18 +51,19 @@ public abstract class ContainerTag implements Tag {
     @Override
     public String render() {
         String code = printStartTag();
+        code+=init;
         for (Tag tag : tags) {
             code += " " + tag.render();
         }
-        code += printEndTag();
+        code += printEndTag()+"\n";
         return code;
     }
 
     @Override
-    public void addTag(Tag tag) {
+    public Tag addTag(Tag tag) {
         if (accepted.contains(tag.getClass())) {
             tags.add(tag);
         }
-
+        return this;
     }
 }

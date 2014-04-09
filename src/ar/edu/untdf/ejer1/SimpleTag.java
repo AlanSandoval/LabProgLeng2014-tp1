@@ -13,7 +13,7 @@ public abstract class SimpleTag implements Tag{
 
 
     @Override
-    public void addTag(Tag tag) {
+    public Tag addTag(Tag tag) {
         throw new UnsupportedOperationException(this.getClass().getName()+": No es un tag contenedor."); 
     }
     

@@ -11,7 +11,7 @@ package ar.edu.untdf.ejer1;
 public class HtmlUI extends ContainerTag  {
 
      public  HtmlUI(){
-         super(Header.class,Body.class);
+         super(HtmlHeader.class,HtmlBody.class);
     }
 
     @Override

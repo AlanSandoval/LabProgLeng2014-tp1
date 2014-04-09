@@ -13,5 +13,5 @@ import java.util.List;
 public interface Tag {  
     public abstract String getName();
     public abstract String render();
-    public abstract void addTag(Tag tag);
+    public abstract Tag addTag(Tag tag);
 }

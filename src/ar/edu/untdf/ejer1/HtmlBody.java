@@ -8,9 +8,9 @@ package ar.edu.untdf.ejer1;
  *
  * @author matiasgel
  */
-public class Body extends ContainerTag{
-    public Body(){
-        super(HtmlString.class);
+public class HtmlBody extends ContainerTag{
+    public HtmlBody(){
+        super(HtmlString.class,HtmlButton.class);
     }
     
     @Override

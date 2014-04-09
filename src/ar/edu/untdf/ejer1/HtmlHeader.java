@@ -11,15 +11,14 @@ import java.util.List;
  *
  * @author soporte
  */
-public  class Header extends ContainerTag{
-
+public  class HtmlHeader extends ContainerTag{
+    public HtmlHeader(){
+    super(Title.class);
+    }
     @Override
     public String getName() {
         return "header";
     }
-
-  
-
-   
+    
   
 }

@@ -23,6 +23,6 @@ public class HtmlString extends SimpleTag {
 
     @Override
     public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("no soporta esta operación.");
     }
 }
