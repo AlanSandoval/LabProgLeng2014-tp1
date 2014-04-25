@@ -10,6 +10,8 @@ import java.util.List;
  */
 public abstract class ContainerTag implements Tag {
     String init="";
+    private List<Class> accepted;
+    private List<Tag> tags;
     /**
      * Este constructor recibe como parametro un grupo de clases que representan
      * tags e inicializa el listado de tags que acepta este tag.
@@ -29,8 +31,7 @@ public abstract class ContainerTag implements Tag {
         }
 
     }
-    private List<Class> accepted;
-    private List<Tag> tags;
+   
     
     /**
      * retorna un string con el tag de inicio
