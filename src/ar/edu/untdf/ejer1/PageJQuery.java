@@ -14,6 +14,8 @@ public class PageJQuery extends AbstractTag{
     public PageJQuery(){}
     public String page()
     {
+        setChanged();
+        notifyObservers();
         return ((new JqueryUI())
                         .addTag((new JqueryHeader()).
                         addTag((new Title()).

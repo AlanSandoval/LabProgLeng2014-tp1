@@ -4,11 +4,6 @@
  */
 package ar.edu.untdf.ejer1;
 
-import java.awt.Frame;
-import java.awt.GraphicsConfiguration;
-import java.awt.Rectangle;
-import javax.swing.JFrame;
-
 /**
  *
  * @author soporte
@@ -17,11 +12,6 @@ public class Main {
 
     public static final int HTML = 1;
     public static final int JQUERY = 2;
-    
-    
-    
-    
-
     public static String paginaSimple(int tipo) {
         String page = "";
         
@@ -56,7 +46,7 @@ public class Main {
         /*System.out.println(paginaSimple(HTML));
         System.out.println(paginaSimple(JQUERY));
         */
-        AbstractTag tag = PageFactory.createPage(PageFactory.Page_HTML);
+        AbstractTag tag = PageFactory.createPage(PageFactory.Page_HTML);       
         System.out.println(tag.page());
         tag = PageFactory.createPage(PageFactory.Page_JQuery);
         System.out.println(tag.page());   

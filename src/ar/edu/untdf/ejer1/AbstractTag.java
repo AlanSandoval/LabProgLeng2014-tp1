@@ -6,10 +6,14 @@
 
 package ar.edu.untdf.ejer1;
 
+import java.util.Observable;
+import java.util.Observer;
+
 /**
  *
  * @author AlanSandoval
  */
-public abstract class AbstractTag {
+public abstract class AbstractTag  extends Observable{
     abstract String page();
+    
 }

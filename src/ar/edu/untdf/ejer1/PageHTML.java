@@ -15,9 +15,12 @@ public class PageHTML extends AbstractTag{
     
     public String page()
     {
+        setChanged();
+        notifyObservers();
         return ((new HtmlUI()).addTag((new HtmlHeader()).
                         addTag((new Title()).
                         addTag(new HtmlString("Pagina Test")))).
                         addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();
+        
     }
 }
