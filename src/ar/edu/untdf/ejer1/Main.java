@@ -24,10 +24,8 @@ public class Main {
                         ((new HtmlUI()).addTag((new HtmlHeader()).
                         addTag((new Title()).
                         addTag(new HtmlString("Pagina Test")))).
-                        addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();
-                page+= (new HtmlUI()).addTag(new Colores(null)).render();                 
+                        addTag(new HtmlBody()).addTag(new Habilitar(new HtmlButton("botonaso1")))).render();                
                break;
-
             
             case JQUERY: 
                 System.out.println("PAGINA JQUERY");
@@ -49,7 +47,7 @@ public class Main {
         */
         AbstractTag tag = PageFactory.createPage(PageFactory.Page_HTML);       
         System.out.println(tag.page());
-        tag = PageFactory.createPage(PageFactory.Page_JQuery);
-        System.out.println(tag.page());   
+     //   tag = PageFactory.createPage(PageFactory.Page_JQuery);
+      //  System.out.println(tag.page());   
     }
 }

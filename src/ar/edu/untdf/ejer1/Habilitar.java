@@ -3,25 +3,27 @@ package ar.edu.untdf.ejer1;
  *
  * @author AlanSandoval
  */
-public class Colores extends AgregarFunciones{
+public class Habilitar extends AgregarFunciones{
 
-    public Colores(Tag tag) {
-        super(tag);
+   HtmlButton boton;
+    public Habilitar(HtmlButton boton) {
+        super(boton);
     }
+    
     
     @Override
     public String Color() {
-        return "<color><backgroundColor:Yellow></color>";
+        return "<enabled> <enabled=true></enabled>";
     }
 
     @Override
     public String getName() {
-        return "Color";
+        return "Habilitar/Desabilitar";
     }
 
     @Override
     public String render() {
-           return "<color><backgroundColor:Yellow></color>";
+           return this.boton.render()+"<enabled> <enabled=true></enabled>";
     }
 
     @Override
