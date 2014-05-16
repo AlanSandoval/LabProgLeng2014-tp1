@@ -25,7 +25,8 @@ public class Main {
                         addTag((new Title()).
                         addTag(new HtmlString("Pagina Test")))).
                         addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();
-                break;
+                page+= (new HtmlUI()).addTag(new Colores(null)).render();                 
+               break;
 
             
             case JQUERY: 

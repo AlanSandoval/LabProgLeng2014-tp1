@@ -6,13 +6,17 @@
 
 package ar.edu.untdf.ejer1;
 
-import java.util.Observable;
-import java.util.Observer;
-
 /**
  *
  * @author AlanSandoval
  */
-public abstract class AbstractTag  extends Observable{
-    abstract String page();    
+public abstract class AgregarFunciones implements Tag{
+    Tag tag=null;
+
+    public AgregarFunciones(Tag tag) {
+        this.tag= tag;
+    }
+      
+    public abstract String Color();
+   
 }

@@ -19,8 +19,8 @@ public class PageHTML extends AbstractTag{
         notifyObservers();
         return ((new HtmlUI()).addTag((new HtmlHeader()).
                         addTag((new Title()).
-                        addTag(new HtmlString("Pagina Test")))).
-                        addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();
+                        addTag(new HtmlString("Pagina Test")))).                       
+                        addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();        
         
     }
 }
