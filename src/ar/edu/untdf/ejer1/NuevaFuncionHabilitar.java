@@ -1,35 +1,37 @@
 package ar.edu.untdf.ejer1;
+
 /**
  *
  * @author AlanSandoval
  */
-public class Habilitar extends AgregarFunciones{
+public class NuevaFuncionHabilitar extends AgregarFunciones {
 
-   HtmlButton boton;
-    public Habilitar(HtmlButton boton) {
-        super(boton);
+    String texto = "";
+   // Tag tag;
+
+    public NuevaFuncionHabilitar(String texto) {
+           this.texto=texto;
     }
-    
-    
+
+
     @Override
-    public String Color() {
+    public String AgregarAtributos() {
         return "<enabled> <enabled=true></enabled>";
     }
 
     @Override
     public String getName() {
-        return "Habilitar/Desabilitar";
+        return "Focus";
     }
 
     @Override
     public String render() {
-           return this.boton.render()+"<enabled> <enabled=true></enabled>";
+        return String.format("<%1$2s>%2$2s</%1$2s>", getName(),texto);
     }
 
     @Override
     public Tag addTag(Tag tag) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-  
-    
+
 }

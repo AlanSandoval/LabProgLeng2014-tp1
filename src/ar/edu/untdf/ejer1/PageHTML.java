@@ -10,13 +10,18 @@ public class PageHTML extends AbstractTag{
     {
         setChanged();
         notifyObservers();
-        return ((new HtmlUI()).addTag((new HtmlHeader()).
+        String texto=
+             ((new HtmlUI()).addTag((new HtmlHeader()).
                         addTag((new Title()).
                         addTag(new HtmlString("Pagina Test")))).                       
-                        //addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();
-                        addTag(new HtmlBody().addTag(new HtmlButton("Aceptar")).addTag(new Habilitar(null)))).render();
-                        
-                        
+                        addTag(new HtmlBody().addTag(new HtmlButton(" botonAceptar ")).
+                        addTag(new NuevaFuncionHabilitar("3343")))).render();
+                        //addTag(new NuevaFuncionHabilitar("algo")))).render();
+                      //  addTag(new HtmlBody().addTag(new HtmlButton("Aceptarr")).addTag(new Habilitar(page())))).render();
+       
+       return texto;
+    }                    
         
-    }
+    
+
 }

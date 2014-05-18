@@ -25,17 +25,19 @@ public class PageFactory implements Observer{
  
     public static AbstractTag createPage(int tipoPage){
         if (tipoPage==PageFactory.Page_HTML){
-             
-            return new PageHTML();
-             
-             
+            
+            return new PageHTML();            
        }
-        if (tipoPage==PageFactory.Page_JQuery){
+        else if (tipoPage==PageFactory.Page_JQuery){
             return new PageJQuery();
-        }
- 
-        return null;
+        }else
+        {
+            return null;
+        }      
+        
     }
+
+    
 
     @Override
     public void update(Observable o, Object arg) {

@@ -11,12 +11,17 @@ package ar.edu.untdf.ejer1;
  * @author AlanSandoval
  */
 public abstract class AgregarFunciones implements Tag{
-    Tag tag=null;
+        String texto="";
+        Tag tag=null;
 
-    public AgregarFunciones(Tag tag) {
-        this.tag= tag;
+    public AgregarFunciones(String tag) {
+        this.texto=tag;
+    }
+    
+    public AgregarFunciones() {
+        
     }
       
-    public abstract String Color();
+    public abstract String AgregarAtributos();
    
 }

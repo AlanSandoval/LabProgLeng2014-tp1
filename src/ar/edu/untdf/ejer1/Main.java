@@ -21,10 +21,11 @@ public class Main {
                 //DONDE CONTAINER TIENE UN LIST DE TAG
                 System.out.println("PAGINA HTML");
                 page =
-                        ((new HtmlUI()).addTag((new HtmlHeader()).
+                        ((new HtmlUI())
+                       .addTag((new HtmlHeader()).
                         addTag((new Title()).
                         addTag(new HtmlString("Pagina Test")))).
-                        addTag(new HtmlBody()).addTag(new Habilitar(new HtmlButton("botonaso1")))).render();                
+                        addTag(new HtmlBody().addTag(new HtmlButton("boton1")))).render();
                break;
             
             case JQUERY: 
@@ -45,8 +46,10 @@ public class Main {
         /*System.out.println(paginaSimple(HTML));
         System.out.println(paginaSimple(JQUERY));
         */
-        AbstractTag tag = PageFactory.createPage(PageFactory.Page_HTML);       
+        AbstractTag tag = PageFactory.createPage(PageFactory.Page_HTML);
+        tag.page();
         System.out.println(tag.page());
+       
      //   tag = PageFactory.createPage(PageFactory.Page_JQuery);
       //  System.out.println(tag.page());   
     }
