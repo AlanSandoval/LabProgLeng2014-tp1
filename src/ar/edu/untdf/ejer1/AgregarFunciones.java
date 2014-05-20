@@ -14,14 +14,10 @@ public abstract class AgregarFunciones implements Tag{
         String texto="";
         Tag tag=null;
 
-    public AgregarFunciones(String tag) {
-        this.texto=tag;
+    public AgregarFunciones(Tag tag) {
+        this.tag=tag;       
     }
-    
-    public AgregarFunciones() {
-        
-    }
-      
+   
     public abstract String AgregarAtributos();
    
 }
